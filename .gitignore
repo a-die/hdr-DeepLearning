@@ -1,4 +1,3 @@
-/_pycahce_
 /HD_Dataset_num_HD_val_results
 /HD_Dataset_num_results
 /HD_Dataset_results
@@ -38,3 +37,4 @@
 /Syntheic_Heteroatom/00099.png
 /Syntheic_Heteroatom/00099_aug_deg.png
 /Syntheic_Heteroatom/SD_HD/*.ipynb
+/__pycache__
