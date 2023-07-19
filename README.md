@@ -1,15 +1,15 @@
-# 基于深度学习的手绘化学分子结构式识别
+# Automatic Recognition of Hand-Drawn Chemical Molecular Structures Based on Deep Learning
 
-化学分子结构式可以**更直接、更方便**地表示化学知识，因此在学术交流中发挥着重要作用。**手绘化学分子结构式**是化学界学生和研究人员的常规任务，若能将手绘化学分子结构式转换为机器可读的数据形式，就可以让计算机处理和分析这些化学分子结构式，从而**大大提高化学研究的效率**。
+Chemical molecular structural formula can express chemical knowledge more directly and conveniently, so it plays an important role in academic communication. **Hand-drawing chemical molecular structural formulas** is a routine task for students and researchers in the field of chemistry. If hand-drawn chemical molecular structural formulas can be converted into machine-readable data, computers can process and analyze these chemical molecular structural formulas, so **Greatly improve the efficiency of chemical research**.
 
-本研究主要研究方法如下：
+The main research methods of this study are as follows:
 
-1. 在**数据集**方面，手绘若干化学分子结构式，此外，本文使用修改源码的*RDKit​*将*SMILES*​编码转换为化学分子结构式图像，采用随机键长，随机旋转等操作，模拟出手绘化学分子结构式图像，再结合图像增强，退化等方法对图像进一步处理，获得大量合成图像。此外，使用*diffusion​*做了*​img to img*​任务。
-2. 在**模型**方面，使用*PyTorch​*深度学习框架搭建编码器，解码器架构的模型，使用卷积神经网络等变种网络作为编码器将手绘化学分子结构式图像的特征转换为固定形状的编码状态，然后再输入解码器中得到机器可读的编码。
+1. In terms of **Dataset**, several chemical molecular structural formulas are drawn by hand. In addition, this article uses the modified source code *RDKit* to convert *SMILES* codes into chemical molecular structural formula images, using random bond lengths, random rotation and other operations , to simulate the hand-painted chemical molecular structure image, and then combine image enhancement, degradation and other methods to further process the image to obtain a large number of synthetic images. Also, *img to img* task was done using *diffusion*.
+2. In terms of **model**, use the *PyTorch* deep learning framework to build the model of the encoder and decoder architecture, and use variant networks such as convolutional neural networks as encoders to convert the features of hand-drawn chemical molecular structure images into fixed The encoded state of the shape is then fed into the decoder to obtain a machine-readable encoding.
 
 ## Requirements
 
-本项目的*hdr​*环境所需依赖
+The dependencies required for the *hdr* environment of this project
 
 ```
 conda env create -f environment.yaml
@@ -18,9 +18,9 @@ conda activate hdr
 
 ## Script
 
-*pipline_stages*所做的实验是合成图像方法的对比试验
+The experiment done by *pipline_stages* is a comparative test of synthetic image method
 
-*size_test*所做的实验是合成图像数量的对比试验
+The experiment done by *size_test* is a comparison test of the number of synthetic images
 
-*SD_HD*所做的实验是合成图像:真实手绘图像比例实验
+The experiment done by *SD_HD* is a synthetic image: real hand-painted image scale experiment
 
