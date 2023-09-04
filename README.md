@@ -24,3 +24,6 @@ The experiment done by *size_test* is a comparison test of the number of synthet
 
 The experiment done by *SD_HD* is a synthetic image: real hand-painted image scale experiment
 
+# Dataset
+
+If you need to obtain the complete dataset, please contact the corresponding author by email:weiliu@hnucm.edu.cn
